@@ -19,7 +19,7 @@ def predict_custom_data(custom_data):
 
     # Make prediction
     prediction = loaded_model.predict(custom_data_scaled)
-    return 'Placed' if prediction[0] == 1 else 'Not Placed'
+    return 'You have a high chance of getting placed 🎉' if prediction[0] == 1 else 'You need work hard on yourself'
 
 # Set page configuration
 st.set_page_config(page_title="Placement Prediction App", layout="centered")
